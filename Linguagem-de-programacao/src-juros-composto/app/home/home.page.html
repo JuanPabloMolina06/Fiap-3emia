@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Juros composto
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"><br>
+    <ion-item>
+      <ion-input type="number" label="Digite o valor de sua prestação"  placeholder="Insira o valor" [(ngModel)]="valorPrestacao"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-range labelPlacement="start" label="Digite a taxa do juros" [min]="0" [pin]="true" [(ngModel)]="valorTaxa" ></ion-range>
+    </ion-item>
+
+    <ion-item>
+      <ion-range labelPlacement="start" label="Digite a quantidade de meses" [min]="0" [pin]="true" [(ngModel)]="valorMeses" ></ion-range>
+    </ion-item>
+
+    <ion-button (click)="calcular()" class="bt">Se mudar o codigo é viado...</ion-button>
+
+</ion-content>

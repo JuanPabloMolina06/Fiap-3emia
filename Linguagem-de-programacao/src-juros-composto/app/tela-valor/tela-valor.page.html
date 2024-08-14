@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tela-valor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <ion-label>O valor da prestação é de {{valorPrestacao | currency:'BRL'}}, sendo que o valor da taxa é de R${{valorTaxa}}</ion-label>
+  </ion-item>
+
+    <ion-button class="bt" routerLink="/">JV GOSTOSO</ion-button>
+
+</ion-content>
